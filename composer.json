@@ -21,7 +21,8 @@
     "require": {
         "php" : "~7.1",
         "getpop/engine": "^1.0@dev",
-        "getpop/engine-wp-bootloader": "^1.0@dev"
+        "getpop/engine-wp-bootloader": "^1.0@dev",
+        "getpop/hooks-contracts-implementation": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit" : ">=7.0",
