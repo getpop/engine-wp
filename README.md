@@ -18,6 +18,8 @@ Via Composer
 $ composer require getpop/engine-wp
 ```
 
+([PoP](https://github.com/leoloso/PoP) must be installed)
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
