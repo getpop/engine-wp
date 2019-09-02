@@ -21,7 +21,7 @@
     "require": {
         "php" : "~7.1",
         "getpop/engine": "^1.0@dev",
-        "getpop/engine-wp-bootloader": "^1.0@dev",
+        "getpop/engine-wp-bootloader": "dev-master",
         "getpop/routing-wp": "dev-master",
         "getpop/hooks-wp": "dev-master",
         "getpop/translation-wp": "dev-master",
