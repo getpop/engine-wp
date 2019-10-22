@@ -13,6 +13,11 @@ class Component extends AbstractComponent
     use YAMLServicesTrait;
     // const VERSION = '0.1.0';
 
+    public static function getTemplatesDir(): string
+    {
+        return dirname(__DIR__).'/templates';
+    }
+
     /**
      * Initialize services
      */

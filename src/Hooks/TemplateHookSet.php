@@ -2,6 +2,7 @@
 namespace PoP\EngineWP\Hooks;
 
 use PoP\Engine\Hooks\AbstractHookSet;
+use PoP\EngineWP\Component;
 
 class TemplateHookSet extends AbstractHookSet
 {
@@ -16,7 +17,7 @@ class TemplateHookSet extends AbstractHookSet
     {
         // If doing JSON, for sure return json.php which only prints the encoded JSON
         if (doingJson()) {
-            return POP_ENGINEWP_TEMPLATES.'/output.php';
+            return Component::getTemplatesDir().'/Output.php';
         }
         return $template;
     }
