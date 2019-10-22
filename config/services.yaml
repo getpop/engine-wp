@@ -1,0 +1,4 @@
+services:
+    PoP\EngineWP\Hooks\:
+        resource: '../src/Hooks/*'
+        public: true

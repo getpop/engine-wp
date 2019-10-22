@@ -39,7 +39,10 @@
     "autoload-dev": {
         "psr-4": {
             "PoP\\EngineWP\\": "tests"
-        }
+        },
+        "files": [
+            "initialize.php"
+        ]
     },
     "scripts": {
         "test": "phpunit",
