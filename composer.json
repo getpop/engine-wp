@@ -34,15 +34,15 @@
     "autoload": {
         "psr-4": {
             "PoP\\EngineWP\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "PoP\\EngineWP\\": "tests"
         },
         "files": [
             "initialize.php"
         ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PoP\\EngineWP\\": "tests"
+        }
     },
     "scripts": {
         "test": "phpunit",
