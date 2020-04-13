@@ -1,4 +1,5 @@
 # PoP Engine for WordPress
+
 <!--
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -15,7 +16,7 @@ Implementation of PoP Engine for WordPress
 Via Composer
 
 ``` bash
-$ composer require getpop/engine-wp dev-master
+composer require getpop/engine-wp dev-master
 ```
 
 **Note:** Your `composer.json` file must have the configuration below to accept minimum stability `"dev"` (there are no releases for PoP yet, and the code is installed directly from the `master` branch):
@@ -36,7 +37,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## Testing
 
 ``` bash
-$ composer test
+composer test
 ```
 
 ## Contributing
