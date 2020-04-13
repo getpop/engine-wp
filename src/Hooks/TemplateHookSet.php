@@ -17,7 +17,7 @@ class TemplateHookSet extends AbstractHookSet
     {
         // If doing JSON, for sure return json.php which only prints the encoded JSON
         if (doingJson()) {
-            return Component::getTemplatesDir().'/Output.php';
+            return Component::getTemplatesDir() . '/Output.php';
         }
         return $template;
     }

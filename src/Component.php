@@ -15,7 +15,7 @@ class Component extends AbstractComponent
 
     public static function getTemplatesDir(): string
     {
-        return dirname(__DIR__).'/templates';
+        return dirname(__DIR__) . '/templates';
     }
 
     /**
@@ -37,6 +37,6 @@ class Component extends AbstractComponent
         parent::beforeBoot();
 
         // Initialize classes
-        ContainerBuilderUtils::instantiateNamespaceServices(__NAMESPACE__.'\\Hooks');
+        ContainerBuilderUtils::instantiateNamespaceServices(__NAMESPACE__ . '\\Hooks');
     }
 }
