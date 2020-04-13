@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace PoP\EngineWP\Hooks;
 
 use PoP\Engine\Hooks\AbstractHookSet;
