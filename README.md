@@ -51,7 +51,6 @@ If you discover any security related issues, please email leo@getpop.org instead
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-<!--
 [ico-version]: https://img.shields.io/packagist/v/getpop/engine-wp.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/getpop/engine-wp/master.svg?style=flat-square
@@ -65,5 +64,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-code-quality]: https://scrutinizer-ci.com/g/getpop/engine-wp
 [link-downloads]: https://packagist.org/packages/getpop/engine-wp
 [link-contributors]: ../../contributors
--->
 [link-author]: https://github.com/leoloso
