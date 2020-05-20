@@ -16,6 +16,23 @@ class Component extends AbstractComponent
     use YAMLServicesTrait;
     // const VERSION = '0.1.0';
 
+    public static function getDependedComponentClasses(): array
+    {
+        return [
+            \PoP\Engine\Component::class,
+            \PoP\RoutingWP\Component::class,
+            \PoP\HooksWP\Component::class,
+            \PoP\TranslationWP\Component::class,
+        ];
+    }
+
+    public static function getDependedMigrationPlugins(): array
+    {
+        return [
+            'migrate-engine-wp',
+        ];
+    }
+
     public static function getTemplatesDir(): string
     {
         return dirname(__DIR__) . '/templates';
