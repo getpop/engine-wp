@@ -20,6 +20,14 @@ Via Composer
 composer require getpop/engine-wp
 ```
 
+## Usage
+
+Initialize the component:
+
+``` php
+\PoP\EngineWP\Component::initialize();
+```
+
 ## Standards
 
 [PSR-1](https://www.php-fig.org/psr/psr-1), [PSR-4](https://www.php-fig.org/psr/psr-4) and [PSR-12](https://www.php-fig.org/psr/psr-12).
