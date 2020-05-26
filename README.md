@@ -25,7 +25,9 @@ composer require getpop/engine-wp
 Initialize the component:
 
 ``` php
-\PoP\EngineWP\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\EngineWP\Component::class,
+]);
 ```
 
 ## Standards
