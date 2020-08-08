@@ -29,7 +29,7 @@ class Component extends AbstractComponent
     public static function getDependedMigrationPlugins(): array
     {
         return [
-            'migrate-engine-wp',
+            'getpop/migrate-engine-wp',
         ];
     }
 
