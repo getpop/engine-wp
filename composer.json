@@ -22,8 +22,8 @@
         "php": "~7.2",
         "getpop/engine": "dev-master",
         "getpop/routing-wp": "dev-master",
-        "getpop/hooks-wp": "~0.1",
-        "getpop/translation-wp": "~0.1",
+        "getpop/hooks-wp": "dev-master",
+        "getpop/translation-wp": "dev-master",
         "getpop/migrate-engine-wp": "dev-master"
     },
     "require-dev": {
