@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace PoP\EngineWP\Hooks;
 
-use PoP\Engine\Hooks\AbstractHookSet;
+use PoP\Hooks\AbstractHookSet;
 use PoP\EngineWP\Templates\TemplateHelpers;
 
 class TemplateHookSet extends AbstractHookSet

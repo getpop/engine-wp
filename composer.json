@@ -23,7 +23,6 @@
         "getpop/engine": "dev-master",
         "getpop/routing-wp": "dev-master",
         "getpop/hooks-wp": "dev-master",
-        "getpop/translation-wp": "dev-master",
         "getpop/migrate-engine-wp": "dev-master"
     },
     "require-dev": {
