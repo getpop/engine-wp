@@ -5,3 +5,6 @@ services:
 
     PoP\EngineWP\Hooks\:
         resource: '../src/Hooks/*'
+
+    PoP\Engine\ErrorHandling\ErrorManagerInterface:
+        class: \PoP\EngineWP\ErrorHandling\ErrorManager
