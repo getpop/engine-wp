@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace PoP\EngineWP\ErrorHandling;
 
 use PoP\Engine\ErrorHandling\AbstractErrorManager;
-use PoP\ComponentModel\Error;
+use PoP\ComponentModel\ErrorHandling\Error;
 
 class ErrorManager extends AbstractErrorManager
 {
