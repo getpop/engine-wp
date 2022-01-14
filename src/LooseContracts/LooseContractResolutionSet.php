@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PoP\EngineWP\LooseContracts;
 
+use PoP\Root\App;
 use PoP\LooseContracts\AbstractLooseContractResolutionSet;
 
 class LooseContractResolutionSet extends AbstractLooseContractResolutionSet
@@ -13,26 +14,26 @@ class LooseContractResolutionSet extends AbstractLooseContractResolutionSet
         // Actions
         // 1. Init comes before boot. We don't have the requested post/user/etc
         // parsed yet, so use with care
-        $this->getHooksAPI()->addAction('init', function (): void {
-            $this->getHooksAPI()->doAction('popcms:init');
+        App::addAction('init', function (): void {
+            App::doAction('popcms:init');
         });
         // 2. Boot once it has parsed the WP_Query, so that the requested post/user/etc
         // is already processed and available. Only hook available is "wp"
         // Watch out: "wp" doesn't trigger in the admin()!
         // Hence, in that case, use "wp_loaded" instead
-        $this->getHooksAPI()->addAction(\is_admin() ? 'wp_loaded' : 'wp', function (): void {
-            $this->getHooksAPI()->doAction('popcms:boot');
+        App::addAction(\is_admin() ? 'wp_loaded' : 'wp', function (): void {
+            App::doAction('popcms:boot');
         });
-        $this->getHooksAPI()->addAction('shutdown', function (): void {
-            $this->getHooksAPI()->doAction('popcms:shutdown');
+        App::addAction('shutdown', function (): void {
+            App::doAction('popcms:shutdown');
         });
-        $this->getHooksAPI()->addAction('activate_plugin', function (): void {
-            $this->getHooksAPI()->doAction('popcms:componentInstalled');
-            $this->getHooksAPI()->doAction('popcms:componentInstalledOrUninstalled');
+        App::addAction('activate_plugin', function (): void {
+            App::doAction('popcms:componentInstalled');
+            App::doAction('popcms:componentInstalledOrUninstalled');
         });
-        $this->getHooksAPI()->addAction('deactivate_plugin', function (): void {
-            $this->getHooksAPI()->doAction('popcms:componentUninstalled');
-            $this->getHooksAPI()->doAction('popcms:componentInstalledOrUninstalled');
+        App::addAction('deactivate_plugin', function (): void {
+            App::doAction('popcms:componentUninstalled');
+            App::doAction('popcms:componentInstalledOrUninstalled');
         });
 
         $this->getLooseContractManager()->implementHooks([
