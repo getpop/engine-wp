@@ -55,10 +55,11 @@ class TestingMustDeleteTemplateHookSet extends AbstractHookSet
                         //     }
                         // GRAPHQL,
                     );
-                    // die($response->getContent());
+                    /** @var string */
+                    $content = $response->getContent();
                     _e(
                         // PHP_EOL . PHP_EOL . "GraphQLServer:" . PHP_EOL .
-                        $response->getContent()
+                        $content
                         // . PHP_EOL . PHP_EOL
                     );
                     die;
